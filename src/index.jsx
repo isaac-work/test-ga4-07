@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
+  createHashRouter,
   createRoutesFromElements,
-  createBrowserRouter,
+  // createBrowserRouter,
   RouterProvider,
   Route,
 } from "react-router-dom";
@@ -22,7 +23,7 @@ import EditContact, {
 import { action as destroyAction } from "./routes/destroy";
 import Index from "./routes/index";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route
       path="/"
@@ -53,42 +54,6 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     // element: <div>Hello world!</div>,
-//     element: <Root />,
-//     errorElement: <ErrorPage />,
-//     loader: rootLoader,
-//     action: rootAction,
-//     children: [
-//       {
-//         errorElement: <ErrorPage />,
-//         children: [
-//           { index: true, element: <Index /> },
-//           {
-//             path: "contacts/:contactId",
-//             element: <Contact />,
-//             loader: contactLoader,
-//             action: contactAction,
-//           },
-//           {
-//             path: "contacts/:contactId/edit",
-//             element: <EditContact />,
-//             loader: contactLoader,
-//             action: editAction,
-//           },
-//           {
-//             path: "contacts/:contactId/destroy",
-//             action: destroyAction,
-//             errorElement: <div>Oops! There was an error.</div>,
-//           },
-//         ],
-//       }
-//     ],
-//   }
-// ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
