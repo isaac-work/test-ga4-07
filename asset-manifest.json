@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-ga4-07/static/css/main.fe200add.css",
+    "main.js": "/test-ga4-07/static/js/main.ba67f51a.js",
+    "index.html": "/test-ga4-07/index.html",
+    "main.fe200add.css.map": "/test-ga4-07/static/css/main.fe200add.css.map",
+    "main.ba67f51a.js.map": "/test-ga4-07/static/js/main.ba67f51a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe200add.css",
+    "static/js/main.ba67f51a.js"
+  ]
+}
